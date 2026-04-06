@@ -1,14 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
-<head><meta charset="UTF-8"><title>Política de Privacidad - IT Automations</title></head>
-<body>
-    <h1>Política de Privacidad</h1>
-    <p>En IT Automations, la privacidad de nuestros usuarios es prioritaria. Esta aplicación utiliza la API de TikTok exclusivamente para facilitar la publicación de contenido multimedia creado por el usuario.</p>
-    <ul>
-        <li><strong>Datos recolectados:</strong> Solo procesamos los tokens de acceso necesarios para la publicación.</li>
-        <li><strong>Uso de datos:</strong> No compartimos ni vendemos información a terceros.</li>
-        <li><strong>Retención:</strong> Los datos se almacenan de forma segura en una infraestructura privada y se eliminan al revocar el acceso.</li>
-    </ul>
-    <p>Contacto: admin@itautomations.org</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad | Centro Legal IT Automations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-300 font-sans leading-relaxed selection:bg-blue-500 selection:text-white">
+    
+    <nav class="bg-slate-900/80 backdrop-blur-md border-b border-slate-800 p-4 sticky top-0 z-20">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="/" class="text-2xl font-extrabold tracking-tight text-blue-400 hover:text-blue-300 transition">
+                IT Automations
+            </a>
+            <span class="text-sm font-medium text-slate-400 border border-slate-700 px-3 py-1 rounded-full">Centro Legal</span>
+        </div>
+    </nav>
+
+    <div class="max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
+        
+        <aside class="md:w-1/4">
+            <div class="sticky top-28 bg-slate-800 p-6 rounded-xl border border-slate-700 shadow-lg">
+                <h3 class="text-white font-bold mb-4 uppercase tracking-wider text-xs">Documentos Legales</h3>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="terminos.html" class="text-slate-400 hover:text-white transition block">Términos y Condiciones</a></li>
+                    <li><a href="#privacidad" class="text-blue-400 font-semibold hover:text-blue-300 transition block">Política de Privacidad</a></li>
+                    <li><a href="#datos" class="text-slate-400 hover:text-white transition block pl-4">- Recopilación de Datos</a></li>
+                    <li><a href="#infraestructura" class="text-slate-400 hover:text-white transition block pl-4">- Seguridad e Infraestructura</a></li>
+                    <li><a href="#integraciones" class="text-slate-400 hover:text-white transition block pl-4">- Integraciones y APIs</a></li>
+                    <li><a href="sla.html" class="text-slate-400 hover:text-white transition block">Acuerdos de Nivel de Servicio (SLA)</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="md:w-3/4 bg-slate-800 p-8 md:p-12 rounded-xl border border-slate-700 shadow-lg">
+            <header class="mb-10 border-b border-slate-700 pb-8">
+                <h1 class="text-4xl font-extrabold text-white mb-2">Política de Privacidad</h1>
+                <p class="text-sm text-slate-400">Última actualización: 6 de abril de 2026</p>
+            </header>
+
+            <div class="space-y-10">
+                <section id="privacidad" class="scroll-mt-28">
+                    <h2 class="text-2xl font-bold text-white mb-4">1. Nuestro Compromiso con su Privacidad</h2>
+                    <p class="mb-4">
+                        En <strong>IT Automations</strong>, entendemos que la eficiencia operativa no puede existir sin una seguridad estricta de la información. Esta Política de Privacidad describe cómo recopilamos, procesamos y protegemos los datos cuando usted utiliza nuestras soluciones SaaS, herramientas de orquestación y servicios de automatización de contenidos.
+                    </p>
+                </section>
+
+                <section id="datos" class="scroll-mt-28">
+                    <h2 class="text-2xl font-bold text-white mb-4">2. Información que Recopilamos</h2>
+                    <p class="mb-4">Para proporcionar nuestros servicios de automatización de manera efectiva, procesamos las siguientes categorías de datos:</p>
+                    <ul class="list-disc pl-6 space-y-2 text-slate-400">
+                        <li><strong class="text-slate-300">Datos de Cuenta y Facturación:</strong> Nombres, direcciones de correo electrónico, detalles de la empresa e información de pago cifrada.</li>
+                        <li><strong class="text-slate-300">Datos de Carga de Trabajo (Workloads):</strong> Información transitoria procesada durante la ejecución de sus flujos de trabajo automatizados. No almacenamos de forma permanente el contenido ("payload") de sus ejecuciones a menos que usted lo configure explícitamente en los registros (logs).</li>
+                        <li><strong class="text-slate-300">Telemetría de Infraestructura:</strong> Metadatos sobre el rendimiento del sistema, tasas de error en despliegues y consumo de recursos para garantizar la salud del clúster.</li>
+                    </ul>
+                </section>
+
+                <section id="infraestructura" class="scroll-mt-28">
+                    <h2 class="text-2xl font-bold text-white mb-4">3. Seguridad e Infraestructura Aislada</h2>
+                    <p class="mb-4">
+                        Su tranquilidad es esencial. Diseñamos nuestra arquitectura con principios de <strong>seguridad por diseño</strong>. 
+                    </p>
+                    <div class="bg-slate-900 p-5 rounded-lg border border-slate-700 text-sm mb-4">
+                        <h4 class="text-white font-bold mb-2">Aislamiento de Entornos</h4>
+                        <p class="text-slate-400">
+                            Nuestra plataforma gestiona los despliegues utilizando metodologías de Infraestructura como Código (IaC). Sus procesos de automatización y flujos de trabajo se ejecutan en contenedores efímeros y aislados lógicamente (aislamiento a nivel de tenant). Esto garantiza que el procesamiento de datos de un cliente nunca interfiera ni sea accesible por las cargas de trabajo de otro cliente, manteniendo un control estricto sobre el ciclo de vida de los datos.
+                        </p>
+                    </div>
+                </section>
+
+                <section id="integraciones" class="scroll-mt-28">
+                    <h2 class="text-2xl font-bold text-white mb-4">4. Integraciones de Terceros y Credenciales API</h2>
+                    <p class="mb-4">
+                        Nuestras soluciones permiten la publicación sincronizada y la automatización entre múltiples plataformas externas (por ejemplo, gestión de contenido de video entre YouTube, TikTok y otras plataformas de medios).
+                    </p>
+                    <ul class="list-disc pl-6 space-y-2 text-slate-400">
+                        <li><strong>Gestión de Credenciales:</strong> Los tokens de acceso, claves API y secretos necesarios para conectar estas plataformas de terceros se almacenan de forma segura utilizando bóvedas de secretos cifrados.</li>
+                        <li><strong>Alcance de los Permisos:</strong> Solo solicitamos los permisos estrictamente necesarios para ejecutar las automatizaciones que usted configure.</li>
+                        <li><strong>Intercambio de Datos:</strong> IT Automations actúa únicamente como un conducto. La forma en que las plataformas de destino (terceros) manejan el contenido publicado está sujeta a las respectivas políticas de privacidad de dichas plataformas.</li>
+                    </ul>
+                </section>
+                
+                <section class="scroll-mt-28 border-t border-slate-700 pt-8 mt-8">
+                    <h2 class="text-xl font-bold text-white mb-4">5. Retención y Eliminación de Datos</h2>
+                    <p class="mb-4">
+                        Retenemos sus datos de cuenta mientras su suscripción esté activa. Los registros de ejecución de los nodos y los datos temporales de los contenedores se purgan automáticamente de forma rotativa según el plan contratado (generalmente entre 7 y 30 días). Si decide cancelar su servicio, puede solicitar el borrado seguro y completo de todas sus credenciales y metadatos asociados.
+                    </p>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <footer class="mt-12 border-t border-slate-800 py-8 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 IT Automations. Todos los derechos reservados.</p>
+        <p class="mt-2">Soluciones Expertas en DevOps & IA</p>
+    </footer>
+
 </body>
 </html>
