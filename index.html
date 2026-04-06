@@ -3,38 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Automations | Expert DevOps & AI Solutions</title>
+    <title>Centro Legal | IT Automations</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-900 text-white font-sans">
-    <div class="min-h-screen flex flex-col items-center justify-center px-4">
-        <header class="text-center mb-12">
-            <h1 class="text-5xl font-extrabold tracking-tight text-blue-400 mb-4">
+<body class="bg-slate-900 text-slate-300 font-sans leading-relaxed selection:bg-blue-500 selection:text-white">
+    
+    <nav class="bg-slate-900/80 backdrop-blur-md border-b border-slate-800 p-4 sticky top-0 z-20">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="/" class="text-2xl font-extrabold tracking-tight text-blue-400 hover:text-blue-300 transition">
                 IT Automations
-            </h1>
-            <p class="text-xl text-slate-400 max-w-2xl">
-                Elevando la eficiencia operativa mediante automatización avanzada, integración de IA y flujos de trabajo en la nube.
-            </p>
-        </header>
+            </a>
+            <span class="text-sm font-medium text-slate-400 border border-slate-700 px-3 py-1 rounded-full">Centro Legal</span>
+        </div>
+    </nav>
 
-        <main class="grid md:grid-cols-2 gap-8 max-w-4xl w-full">
-            <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
-                <h2 class="text-xl font-bold mb-2">Automatización de Contenido</h2>
-                <p class="text-slate-400">Optimizamos la distribución de contenido multimedia multiplataforma utilizando motores de IA de última generación.</p>
+    <div class="max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
+        
+        <aside class="md:w-1/4">
+            <div class="sticky top-28 bg-slate-800 p-6 rounded-xl border border-slate-700 shadow-lg">
+                <h3 class="text-white font-bold mb-4 uppercase tracking-wider text-xs">Documentos Legales</h3>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#condiciones" class="text-blue-400 font-semibold hover:text-blue-300 transition block">Términos y Condiciones</a></li>
+                    <li><a href="#privacidad" class="text-slate-400 hover:text-white transition block">Política de Privacidad</a></li>
+                    <li><a href="#sla" class="text-slate-400 hover:text-white transition block">Acuerdos de Nivel de Servicio (SLA)</a></li>
+                    <li><a href="#ia-datos" class="text-slate-400 hover:text-white transition block">Uso de IA y Datos</a></li>
+                </ul>
             </div>
-            <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
-                <h2 class="text-xl font-bold mb-2">Infraestructura Cloud</h2>
-                <p class="text-slate-400">Despliegue de soluciones escalables en AWS/GCP con un enfoque en seguridad Zero Trust.</p>
+        </aside>
+
+        <main class="md:w-3/4 bg-slate-800 p-8 md:p-12 rounded-xl border border-slate-700 shadow-lg">
+            <header class="mb-10 border-b border-slate-700 pb-8">
+                <h1 class="text-4xl font-extrabold text-white mb-2">Términos y Condiciones de Servicio</h1>
+                <p class="text-sm text-slate-400">Última actualización: 6 de abril de 2026</p>
+            </header>
+
+            <div class="space-y-10">
+                <section id="condiciones" class="scroll-mt-28">
+                    <h2 class="text-2xl font-bold text-white mb-4">1. Introducción y Aceptación</h2>
+                    <p class="mb-4">
+                        Al acceder y utilizar los servicios SaaS, integraciones de Inteligencia Artificial y herramientas de infraestructura en la nube proporcionadas por <strong>IT Automations</strong>, usted acepta estar sujeto a estos términos. Si no está de acuerdo con alguna parte de los términos, no podrá acceder al servicio.
+                    </p>
+                    <p>
+                        Nuestras soluciones están diseñadas para entornos B2B (Business to Business), optimizando flujos de trabajo mediante motores de IA de última generación.
+                    </p>
+                </section>
+
+                <section id="privacidad" class="scroll-mt-28">
+                    <h2 class="text-2xl font-bold text-white mb-4">2. Privacidad y Seguridad Zero Trust</h2>
+                    <p class="mb-4">
+                        La seguridad de su infraestructura es nuestra prioridad. Operamos bajo un modelo de <strong>Zero Trust</strong> (Confianza Cero) para todos los despliegues en AWS y GCP. 
+                    </p>
+                    <ul class="list-disc pl-6 space-y-2 text-slate-400">
+                        <li>Los datos en tránsito y en reposo están encriptados mediante AES-256.</li>
+                        <li>No vendemos ni comercializamos los datos telemétricos de su infraestructura.</li>
+                        <li>Para más detalles, consulte nuestra Política de Privacidad completa.</li>
+                    </ul>
+                </section>
+
+                <section id="ia-datos" class="scroll-mt-28">
+                    <h2 class="text-2xl font-bold text-white mb-4">3. Procesamiento mediante Inteligencia Artificial</h2>
+                    <p class="mb-4">
+                        IT Automations utiliza modelos de aprendizaje automático para la "Automatización de Contenido" y la optimización de servidores. Al usar nuestras funciones impulsadas por IA, usted reconoce que:
+                    </p>
+                    <div class="bg-slate-900 p-4 rounded-lg border border-slate-700 text-sm">
+                        <p class="mb-2"><strong>a. Precisión:</strong> Aunque nuestros modelos son de última generación, la IA puede generar resultados inesperados (alucinaciones). El cliente es responsable de revisar el contenido automatizado antes de su distribución final.</p>
+                        <p><strong>b. Entrenamiento de modelos:</strong> Por defecto, <em>no</em> utilizamos los datos privados de su empresa para entrenar nuestros modelos base fundacionales, garantizando la privacidad de su propiedad intelectual.</p>
+                    </div>
+                </section>
+                
+                <section id="sla" class="scroll-mt-28">
+                    <h2 class="text-2xl font-bold text-white mb-4">4. Disponibilidad del Servicio (SLA)</h2>
+                    <p>
+                        Garantizamos un tiempo de actividad (uptime) del <strong>99.9%</strong> mensual para nuestros servicios core. En caso de no cumplir con este SLA, los clientes elegibles recibirán créditos de servicio aplicables a su próxima factura de suscripción SaaS, según lo detallado en nuestro documento técnico de SLA.
+                    </p>
+                </section>
+
             </div>
         </main>
-
-        <footer class="mt-16 text-slate-500 text-sm">
-            <nav class="flex gap-4 justify-center mb-4">
-                <a href="/terms.html" class="hover:text-blue-400 underline">Términos</a>
-                <a href="/privacy.html" class="hover:text-blue-400 underline">Privacidad</a>
-            </nav>
-            <p>&copy; 2026 IT Automations. Todos los derechos reservados.</p>
-        </footer>
     </div>
+
+    <footer class="mt-12 border-t border-slate-800 py-8 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 IT Automations. Todos los derechos reservados.</p>
+        <p class="mt-2">Soluciones Expertas en DevOps & IA</p>
+    </footer>
+
 </body>
 </html>
