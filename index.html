@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centro Legal | IT Automations</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
 </head>
 <body class="bg-slate-900 text-slate-300 font-sans leading-relaxed selection:bg-blue-500 selection:text-white">
     
@@ -13,78 +16,111 @@
             <a href="/" class="text-2xl font-extrabold tracking-tight text-blue-400 hover:text-blue-300 transition">
                 IT Automations
             </a>
-            <span class="text-sm font-medium text-slate-400 border border-slate-700 px-3 py-1 rounded-full">Centro Legal</span>
+            <span class="text-sm font-medium text-slate-400 border border-slate-700 px-3 py-1 rounded-full">Centro Legal Único</span>
         </div>
     </nav>
 
     <div class="max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
         
-        <aside class="md:w-1/4">
+        <aside class="md:w-1/4 hidden md:block">
             <div class="sticky top-28 bg-slate-800 p-6 rounded-xl border border-slate-700 shadow-lg">
-                <h3 class="text-white font-bold mb-4 uppercase tracking-wider text-xs">Documentos Legales</h3>
+                <h3 class="text-white font-bold mb-4 uppercase tracking-wider text-xs">Índice Legal</h3>
                 <ul class="space-y-3 text-sm">
-                    <li><a href="#condiciones" class="text-blue-400 font-semibold hover:text-blue-300 transition block">Términos y Condiciones</a></li>
-                    <li><a href="#privacidad" class="text-slate-400 hover:text-white transition block">Política de Privacidad</a></li>
-                    <li><a href="#sla" class="text-slate-400 hover:text-white transition block">Acuerdos de Nivel de Servicio (SLA)</a></li>
-                    <li><a href="#ia-datos" class="text-slate-400 hover:text-white transition block">Uso de IA y Datos</a></li>
+                    <li><a href="#terminos" class="text-blue-400 font-semibold hover:text-blue-300 transition block">Términos de Servicio</a></li>
+                    <li><a href="#licencia" class="text-slate-400 hover:text-white transition block pl-4">- Licencia y Uso</a></li>
+                    <li><a href="#responsabilidad" class="text-slate-400 hover:text-white transition block pl-4">- Responsabilidad y APIs</a></li>
+                    <li><a href="#privacidad" class="text-blue-400 font-semibold hover:text-blue-300 transition block mt-4">Política de Privacidad</a></li>
+                    <li><a href="#datos" class="text-slate-400 hover:text-white transition block pl-4">- Recopilación e Infraestructura</a></li>
+                    <li><a href="#retencion" class="text-slate-400 hover:text-white transition block pl-4">- Retención de Datos</a></li>
+                    <li><a href="#ia-datos" class="text-blue-400 font-semibold hover:text-blue-300 transition block mt-4">Uso de IA y Datos</a></li>
+                    <li><a href="#sla" class="text-blue-400 font-semibold hover:text-blue-300 transition block mt-4">Acuerdo de SLA</a></li>
                 </ul>
             </div>
         </aside>
 
         <main class="md:w-3/4 bg-slate-800 p-8 md:p-12 rounded-xl border border-slate-700 shadow-lg">
             <header class="mb-10 border-b border-slate-700 pb-8">
-                <h1 class="text-4xl font-extrabold text-white mb-2">Términos y Condiciones de Servicio</h1>
+                <h1 class="text-4xl font-extrabold text-white mb-2">Acuerdos y Políticas Legales</h1>
                 <p class="text-sm text-slate-400">Última actualización: 6 de abril de 2026</p>
             </header>
 
-            <div class="space-y-10">
-                <section id="condiciones" class="scroll-mt-28">
-                    <h2 class="text-2xl font-bold text-white mb-4">1. Introducción y Aceptación</h2>
-                    <p class="mb-4">
-                        Al acceder y utilizar los servicios SaaS, integraciones de Inteligencia Artificial y herramientas de infraestructura en la nube proporcionadas por <strong>IT Automations</strong>, usted acepta estar sujeto a estos términos. Si no está de acuerdo con alguna parte de los términos, no podrá acceder al servicio.
-                    </p>
-                    <p>
-                        Nuestras soluciones están diseñadas para entornos B2B (Business to Business), optimizando flujos de trabajo mediante motores de IA de última generación.
-                    </p>
-                </section>
+            <div class="space-y-12">
+                
+                <div>
+                    <h2 id="terminos" class="text-3xl font-bold text-white mb-6 border-b border-slate-700 pb-2 scroll-mt-28">I. Términos y Condiciones de Servicio</h2>
+                    
+                    <section class="mb-8">
+                        <h3 class="text-xl font-bold text-white mb-3">1. Introducción y Aceptación</h3>
+                        <p class="mb-4">
+                            Al acceder y utilizar los servicios SaaS, integraciones de Inteligencia Artificial y herramientas de infraestructura en la nube proporcionadas por <strong>IT Automations</strong>, usted acepta estar sujeto a estos términos. Nuestras soluciones están diseñadas para entornos B2B, optimizando flujos de trabajo mediante orquestación y motores de IA.
+                        </p>
+                    </section>
 
-                <section id="privacidad" class="scroll-mt-28">
-                    <h2 class="text-2xl font-bold text-white mb-4">2. Privacidad y Seguridad Zero Trust</h2>
-                    <p class="mb-4">
-                        La seguridad de su infraestructura es nuestra prioridad. Operamos bajo un modelo de <strong>Zero Trust</strong> (Confianza Cero) para todos los despliegues en la nube. 
-                    </p>
-                    <ul class="list-disc pl-6 space-y-2 text-slate-400">
-                        <li>Los datos en tránsito y en reposo están encriptados mediante AES-256.</li>
-                        <li>No vendemos ni comercializamos los datos telemétricos de su infraestructura.</li>
-                        <li>Para más detalles, consulte nuestra Política de Privacidad completa.</li>
-                    </ul>
-                </section>
+                    <section id="licencia" class="mb-8 scroll-mt-28">
+                        <h3 class="text-xl font-bold text-white mb-3">2. Uso Aceptable y Licencia</h3>
+                        <p class="mb-4">
+                            Le otorgamos una licencia limitada, no exclusiva y revocable para acceder a nuestro software SaaS. Está estrictamente prohibido utilizar nuestros nodos para minería de criptomonedas, ataques DDoS, escaneo de vulnerabilidades sin consentimiento o eludir los límites de ejecución establecidos en su plan.
+                        </p>
+                    </section>
 
-                <section id="ia-datos" class="scroll-mt-28">
-                    <h2 class="text-2xl font-bold text-white mb-4">3. Procesamiento mediante Inteligencia Artificial</h2>
+                    <section id="responsabilidad" class="mb-8 scroll-mt-28">
+                        <h3 class="text-xl font-bold text-white mb-3">3. Dependencias de Terceros y APIs</h3>
+                        <p class="mb-4">
+                            IT Automations no es responsable de fallos en la ejecución de automatizaciones si plataformas de terceros (ej. YouTube, TikTok, APIs externas) alteran sus endpoints, revocan tokens de acceso o modifican sus límites de tasa (rate-limiting). No seremos responsables por pérdida de ingresos o interrupción del negocio resultante de estos cambios externos.
+                        </p>
+                    </section>
+                </div>
+
+                <div>
+                    <h2 id="privacidad" class="text-3xl font-bold text-white mb-6 border-b border-slate-700 pb-2 scroll-mt-28">II. Política de Privacidad</h2>
+                    
+                    <section class="mb-8">
+                        <h3 class="text-xl font-bold text-white mb-3">1. Seguridad Zero Trust</h3>
+                        <p class="mb-4">
+                            Operamos bajo un modelo de <strong>Zero Trust</strong> para todos los despliegues. Los datos en tránsito y en reposo están encriptados mediante AES-256. No vendemos ni comercializamos los datos telemétricos de su infraestructura.
+                        </p>
+                    </section>
+
+                    <section id="datos" class="mb-8 scroll-mt-28">
+                        <h3 class="text-xl font-bold text-white mb-3">2. Recopilación e Infraestructura Aislada</h3>
+                        <p class="mb-4">
+                            Procesamos datos de cuenta, facturación y telemetría de rendimiento. Sus procesos y flujos de trabajo se ejecutan en contenedores aislados lógicamente. No almacenamos permanentemente el "payload" de sus automatizaciones a menos que configure los registros (logs) explícitamente. Las credenciales de terceros se almacenan en bóvedas de secretos cifrados.
+                        </p>
+                    </section>
+
+                    <section id="retencion" class="mb-8 scroll-mt-28">
+                        <h3 class="text-xl font-bold text-white mb-3">3. Retención y Eliminación de Datos</h3>
+                        <p class="mb-4">
+                            Retenemos sus datos de cuenta mientras su suscripción esté activa. Los registros temporales de los contenedores se purgan automáticamente de forma rotativa según su plan (generalmente entre 7 y 30 días). Puede solicitar el borrado seguro de sus metadatos y credenciales al cancelar el servicio.
+                        </p>
+                    </section>
+                </div>
+
+                <div>
+                    <h2 id="ia-datos" class="text-3xl font-bold text-white mb-6 border-b border-slate-700 pb-2 scroll-mt-28">III. Procesamiento mediante IA</h2>
                     <p class="mb-4">
-                        IT Automations utiliza modelos de aprendizaje automático para la "Automatización de Contenido" y la optimización de servidores. Al usar nuestras funciones impulsadas por IA, usted reconoce que:
+                        Al usar nuestras funciones impulsadas por aprendizaje automático para la creación de contenido o gestión de infraestructura, usted reconoce que:
                     </p>
                     <div class="bg-slate-900 p-4 rounded-lg border border-slate-700 text-sm">
-                        <p class="mb-2"><strong>a. Precisión:</strong> Aunque nuestros modelos son de última generación, la IA puede generar resultados inesperados (alucinaciones). El cliente es responsable de revisar el contenido automatizado antes de su distribución final.</p>
-                        <p><strong>b. Entrenamiento de modelos:</strong> Por defecto, <em>no</em> utilizamos los datos privados de su empresa para entrenar nuestros modelos base fundacionales, garantizando la privacidad de su propiedad intelectual.</p>
+                        <p class="mb-2"><strong class="text-white">a. Precisión:</strong> La IA puede generar resultados inesperados (alucinaciones). Es su responsabilidad revisar el contenido automatizado antes de su distribución final.</p>
+                        <p><strong class="text-white">b. Entrenamiento de modelos:</strong> Por defecto, <em>no</em> utilizamos los datos privados de su empresa ni las ejecuciones de sus flujos de trabajo para entrenar nuestros modelos base fundacionales, garantizando su propiedad intelectual.</p>
                     </div>
-                </section>
-                
-                <section id="sla" class="scroll-mt-28">
-                    <h2 class="text-2xl font-bold text-white mb-4">4. Disponibilidad del Servicio (SLA)</h2>
+                </div>
+
+                <div>
+                    <h2 id="sla" class="text-3xl font-bold text-white mb-6 border-b border-slate-700 pb-2 scroll-mt-28">IV. Acuerdos de Nivel de Servicio (SLA)</h2>
                     <p>
-                        Garantizamos un tiempo de actividad (uptime) del <strong>99.9%</strong> mensual para nuestros servicios core. En caso de no cumplir con este SLA, los clientes elegibles recibirán créditos de servicio aplicables a su próxima factura de suscripción SaaS, según lo detallado en nuestro documento técnico de SLA.
+                        Garantizamos un tiempo de actividad (uptime) del <strong>99.9%</strong> mensual para nuestros servicios core. En caso de no cumplir con este SLA, los clientes elegibles recibirán créditos de servicio aplicables a su próxima factura de suscripción SaaS, según los términos detallados en nuestro portal de soporte.
                     </p>
-                </section>
+                </div>
 
             </div>
         </main>
     </div>
-
+    
     <footer class="mt-12 border-t border-slate-800 py-8 text-center text-slate-500 text-sm">
         <p>&copy; 2026 IT Automations. Todos los derechos reservados.</p>
-        <p class="mt-2">Soluciones Expertas en DevOps & IA</p>
+        <p class="mt-2">Soluciones Expertas.</p>
     </footer>
 
 </body>
